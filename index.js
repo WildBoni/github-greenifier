@@ -67,6 +67,19 @@ jobs:
   fs.writeFileSync(filePath, cronJobYml);
 
   console.log(`GitHub Actions cron job YAML file generated at "${filePath}"`);
+
+  // Define the path for dummy_file.txt in the root directory of the project
+  const dummyFilePath = path.join(process.cwd(), "dummy_file.txt");
+
+  // Check if dummy_file.txt already exists, if not, create it with initial content
+  if (!fs.existsSync(dummyFilePath)) {
+    fs.writeFileSync(dummyFilePath, "Initial content for dummy file\n");
+    console.log(
+      `dummy_file.txt created at "${dummyFilePath}" with initial content.`
+    );
+  } else {
+    console.log(`dummy_file.txt already exists at "${dummyFilePath}".`);
+  }
 }
 
 // Run the function
