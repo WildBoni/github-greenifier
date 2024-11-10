@@ -1,6 +1,6 @@
 {
   "name": "github-greenifier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make your GitHub greener than a rainforest!",
   "main": "index.js",
   "bin": {
