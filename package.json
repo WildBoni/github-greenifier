@@ -1,18 +1,22 @@
 {
   "name": "github-greenifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make your GitHub greener than a rainforest!",
   "main": "index.js",
   "bin": {
     "generate-cron-job": "./index.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "release": "standard-version"
   },
   "author": "Davide Bonifacio",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^12.0.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
 }
