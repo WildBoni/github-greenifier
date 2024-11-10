@@ -40,7 +40,7 @@ async function generateCronJob() {
         - cron: "0 */${hours} * * *"
 
     permissions:
-      content: write
+      contents: write
 
     jobs:
       update-file:
